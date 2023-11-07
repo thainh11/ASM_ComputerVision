@@ -4,7 +4,7 @@ import cv2
 
 video=cv2.VideoCapture(0)
 
-facedetect = cv2.CascadeClassifier("C:/Users/admin/scoop/persist/python/Lib/site-packages/cv2/data/haarcascade_frontalface_alt2.xml")
+facedetect = cv2.CascadeClassifier("your_path/data/haarcascade_frontalface_alt2.xml")
 
 id = input("Enter Your ID: ")
 # id = int(id)
