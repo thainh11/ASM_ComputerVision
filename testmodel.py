@@ -5,12 +5,12 @@ import os
 
 video = cv2.VideoCapture(0)
 
-facedetect = cv2.CascadeClassifier("C:/Users/admin/scoop/persist/python/Lib/site-packages/cv2/data/haarcascade_frontalface_alt2.xml")
+facedetect = cv2.CascadeClassifier("your_path/haarcascade_frontalface_alt2.xml")
 
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 recognizer.read("Trainer.yml")
 
-path = "D:/CPV301/ASS_CPV301/Celebrity Faces Dataset"
+path = "Celebrity Faces Dataset"
 name_list = []
 
 for folder_name in os.listdir(path):
