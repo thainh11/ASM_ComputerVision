@@ -6,7 +6,7 @@ import os
 
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 
-path = "D:/CPV301/ASS_CPV301/Celebrity Faces Dataset"
+path = "Celebrity Faces Dataset"
 # def preprocess_image(image):
 #     # Apply light balancing (e.g., histogram equalization)
 #     image = cv2.equalizeHist(image)
