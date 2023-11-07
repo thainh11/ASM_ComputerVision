@@ -3,14 +3,14 @@ import cv2
 from keras.models import load_model
 import numpy as np
 
-facedetect = cv2.CascadeClassifier('C:/Users/admin/scoop/persist/python/Lib/site-packages/cv2/data/haarcascade_frontalface_alt2.xml')
+facedetect = cv2.CascadeClassifier('your_path/haarcascade_frontalface_alt2.xml')
 
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
 cap.set(4, 480)
 font = cv2.FONT_HERSHEY_COMPLEX
 
-model = load_model('D:\CPV301\converted_keras\keras_model.h5')
+model = load_model('keras_model.h5')
 
 class_names = [
     "Angelina Jolie", "Hugh Jackman", "Johnny Depp", "Leonardo DiCaprio", "Megan Fox",
